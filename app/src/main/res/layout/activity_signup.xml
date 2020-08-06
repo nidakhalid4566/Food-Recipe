@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="90pt"
+        android:layout_height="80pt"
+        android:background="@drawable/register"
+        android:layout_marginTop="25pt"
+        android:layout_marginLeft="55pt"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="  User name"
+        android:textSize="25dp"
+        android:id="@+id/e1"
+        android:layout_marginLeft="35pt"
+        android:layout_marginTop="20pt"
+        android:drawableLeft="@drawable/name"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="   Enter password"
+        android:drawableLeft="@drawable/pasword"
+        android:textSize="25dp"
+        android:inputType="textPassword"
+        android:id="@+id/e2"
+        android:layout_marginLeft="35pt"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="   ConfirmPassword"
+        android:drawableLeft="@drawable/pasword"
+        android:textSize="25dp"
+        android:inputType="textPassword"
+        android:id="@+id/e3"
+        android:layout_marginLeft="35pt"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Register"
+        android:onClick="Register"
+        android:id="@+id/b1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40pt"
+        android:background="@drawable/rounded_button"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Register?"
+            android:layout_marginLeft="50pt"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="5dp"
+            android:id="@+id/t1"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

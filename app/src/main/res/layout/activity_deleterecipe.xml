@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Deleterecipe"
+    android:background="@color/colorPrimaryDark">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:id="@+id/e1"
+        android:hint=" Enter respie name u want to delete"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/search"
+        android:background="@color/white"/>
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="Delete"
+        android:id="@+id/b1"
+        android:layout_below="@id/e1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40pt"
+        android:background="@drawable/round"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:id="@+id/l1"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"/>
+
+</RelativeLayout>

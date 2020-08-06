@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".Adminlogin">
+    <ImageView
+        android:layout_width="90pt"
+        android:layout_height="80pt"
+        android:background="@drawable/admin"
+        android:layout_marginTop="25pt"
+        android:layout_marginLeft="55pt"/>
+<EditText
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:hint="  User name"
+    android:textSize="25dp"
+    android:id="@+id/e1"
+    android:layout_marginLeft="40pt"
+    android:layout_marginTop="20pt"
+    android:drawableLeft="@drawable/name"/>
+<EditText
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:hint="   Enter password"
+    android:drawableLeft="@drawable/pasword"
+    android:textSize="25dp"
+    android:inputType="textPassword"
+    android:id="@+id/e2"
+    android:layout_marginLeft="40pt"
+    android:layout_marginTop="20dp"/>
+<Button
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:textSize="10pt"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:text="Login"
+    android:onClick="Adminlogin"
+    android:id="@+id/b1"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="40pt"
+    android:background="@drawable/rounded_button"
+    />
+
+
+</LinearLayout>

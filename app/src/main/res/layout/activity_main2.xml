@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="90pt"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+         >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wel2"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Welcome to the Food Recipe App. This App will have a lot of interesting recipes"
+            android:textSize="20dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:id="@+id/tmovement"
+            />
+
+
+
+
+    <Button
+        android:layout_width="90pt"
+        android:layout_height="40pt"
+        android:text="Admin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:textSize="10pt"
+        android:onClick="admin"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/admin"
+        android:layout_marginTop="120dp"
+        />
+    <Button
+        android:layout_width="90pt"
+        android:layout_height="40pt"
+        android:background="@drawable/rounded_button"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:text="User"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:onClick="user"
+        android:layout_below="@+id/admin"
+        android:layout_marginTop="50dp"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

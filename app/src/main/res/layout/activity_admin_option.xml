@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminOption"
+    android:background="@drawable/res"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160pt"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="90pt"
+        android:layout_marginLeft="45pt">
+    <Button
+        android:text="Feedback"
+        android:background="@drawable/round"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/b1"
+        android:onClick="feedback"
+        android:layout_marginTop="10pt"
+        android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/rating"
+            android:background="@drawable/round"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@id/b1"
+            android:text="Rating"
+            android:onClick="rating"
+            android:layout_marginTop="5pt"/>
+
+        <Button
+            android:id="@+id/b2"
+            android:background="@drawable/round"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@id/rating"
+            android:text="Add  recipies"
+            android:onClick="addrecpie"
+            android:layout_marginTop="5pt"/>
+
+        <Button
+            android:background="@drawable/round"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/b2"
+            android:id="@+id/seelist"
+            android:layout_marginTop="10dp"
+            android:onClick="seelist"
+            android:text="see list " />
+        <Button
+            android:background="@drawable/round"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/seelist"
+            android:layout_marginTop="10dp"
+            android:onClick="delete"
+            android:text="Delete recipies" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

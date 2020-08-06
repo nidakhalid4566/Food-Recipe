@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback"
+    android:padding="20dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:background="@drawable/feedback1"
+        android:id="@+id/i1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FeedBack/SuggestionRecipe:"
+        android:textSize="35dp"
+        android:layout_below="@id/i1"
+        android:textStyle="bold"
+        android:layout_marginTop="10pt"
+        android:id="@+id/t1"/>
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="50pt"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="20dp"
+        android:hint="enter feedback"
+        android:textSize="25dp" />
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Submit"
+        android:layout_below="@id/e1"
+        android:id="@+id/b1"
+        android:onClick="feedback"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40pt"
+        android:background="@drawable/rounded_button"
+        />
+
+</RelativeLayout>
